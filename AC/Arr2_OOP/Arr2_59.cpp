@@ -1,16 +1,16 @@
 #include <iostream>
-#include <string.h> 
+#include <string> 
 using namespace std;
 
 int main (void) {
-  char arr[50];
+  string arr;
   int num = 0;
   cin >> num;
 
   for(int i = 0; i < num; i++) {  
     int len = 0;
     cin >> arr;
-    len = strlen(arr);  // length of arr
+    len = arr.size();  // length of arr
     if(len != 4) {  // length is not 4
       cout << "Failure Input" << endl;
       continue;

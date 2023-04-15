@@ -1,13 +1,13 @@
 #include <iostream>
-#include <string.h> 
+#include <string> 
 using namespace std;
 
 int main (void) {
-  char str[150]; 
+  string str; 
   int count[150] = {0}, len;  
 
   cin >> str;
-  len = strlen(str);    // find length
+  len = str.size();    // find length
 
   for (int i = 0; i < len; i++) {
     count[str[i]]++;    // count 

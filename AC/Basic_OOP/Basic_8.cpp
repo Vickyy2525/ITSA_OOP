@@ -4,7 +4,7 @@ using namespace std;
 int main (void) {
   int num = 0, flag = 0;
 
-  scanf("%d", &num);
+  cin >> num;
   for(int i = 2; i < num; i++) {
     if(num % i == 0) {  // can divide
       flag = 1;

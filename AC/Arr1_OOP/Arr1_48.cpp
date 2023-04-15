@@ -1,9 +1,9 @@
 #include <iostream>
-#include <string.h> 
+#include <string> 
 using namespace std;
 
 int main (void) {
-  char arr[8], answer[8];
+  string arr;
   int num, ans = 0, buf = 0;
   cin >> arr;
 
@@ -15,7 +15,7 @@ int main (void) {
   arr[2] = arr[0];
   arr[0] = temp;
 
-  num = atoi(arr);  // to integer
+  num = stoi(arr);  // to integer
 
   
   for(int i = 0; i < 4; i++) {
@@ -28,6 +28,7 @@ int main (void) {
     ans += buf;
   }
 
+  char* answer;
   sprintf(answer, "%d", ans);
   if(answer[3] == '\0')cout << "0" << answer << endl;
   else cout << answer << endl;

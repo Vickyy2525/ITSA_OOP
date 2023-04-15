@@ -1,5 +1,5 @@
 #include <iostream>
-#include <string> 
+#include <string>
 using namespace std;
 
 int main (void) {
@@ -16,10 +16,12 @@ int main (void) {
       if(str[strCnt] == cmp [strCnt]) strCnt++;
       else flag = 1;        // different
       if(strCnt == len-1) { // all the same
-        cout << "YES" << endl;  // palindrome
+        cout << "YES\n";  // palindrome
         break;
       }
     }
-    if(flag == 1) cout << "NO" << endl; // not palindrome
+    if(flag == 1) cout << "NO\n"; // not palindrome
   }
+
+  return 0;
 }
